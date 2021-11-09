@@ -57,6 +57,9 @@ h4 {
   font-weight: bold;
 }
 
+p {
+  margin: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -130,4 +133,34 @@ body {
 
 .speaker__info-wrap {
   margin-bottom: 2rem;
+}
+
+/* grids */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-cols--2 {
+    grid-template-columns: 25% 75%;
+    grid-gap: 3rem;
+  }
+}
+
+.green-black {
+  background-image: linear-gradient(rgba(156, 251, 222, 0.2) 10%, transparent);
+}
+
+.white-black {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1) 10%, transparent);
+}
+
+.agenda__heading {
+  color: var(--color-primary);
+  margin-bottom: 4.8rem;
+}
+
+.container-padding {
+  padding: 4rem 3rem;
 }
