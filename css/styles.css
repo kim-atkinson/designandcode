@@ -68,6 +68,7 @@ body {
 .icon-social {
   height: 48px;
   width: 48px;
+  margin-right: 20px;
 }
 
 .icon-company {
@@ -163,4 +164,41 @@ body {
 
 .container-padding {
   padding: 4rem 3rem;
+}
+
+/* Footer */
+footer {
+  padding: 4.8rem 0;
+}
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-items {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.social-footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.copyright {
+  margin-bottom: 2.4rem;
+}
+
+.social-icons-caption {
+  margin-right: 3rem;
 }
