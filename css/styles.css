@@ -45,6 +45,12 @@ h1 {
   font-size: 4rem;
 }
 
+@media screen and (min-width: 1068px) {
+  h1 {
+    font-size: 10rem;
+  }
+}
+
 h2 {
   font-size: 4rem;
 }
@@ -112,7 +118,7 @@ body {
   margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .speaker-profile-wrap {
     align-items: flex-start;
     justify-content: flex-start;
@@ -156,6 +162,9 @@ body {
   margin-bottom: 2rem;
 }
 
+.speaker__info {
+  text-align: center;
+}
 /* grids */
 
 .grid {
@@ -229,7 +238,7 @@ body {
   align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1100px) {
   .footer-items {
     flex-direction: row;
     justify-content: space-between;
@@ -243,12 +252,23 @@ body {
   align-items: center;
 }
 
-a {
-  text-decoration: none;
-}
-
 .copyright {
   margin-bottom: 2.4rem;
+}
+
+@media screen and (min-width: 1100px) {
+  .social-footer-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .copyright {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  text-decoration: none;
 }
 
 .social-icons-caption {
@@ -267,7 +287,7 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1.2rem 2rem;
+  padding: 1.8rem 2rem;
 }
 
 .nav__list {
@@ -320,12 +340,16 @@ a {
 /* Hero */
 
 .hero {
+  padding: 6rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 5rem 0;
+}
+.date {
+  font-size: 1.8rem;
+  margin-bottom: 4.8rem;
 }
 
 .container {
@@ -338,11 +362,11 @@ a {
   margin-bottom: 4rem;
 }
 
-.temp {
+/* .section__heading {
   font-weight: 600;
   font-size: 6rem;
   margin: 0 0 7rem 0;
-}
+} */
 .img {
   max-width: 600px;
 }
@@ -383,11 +407,73 @@ a {
 /* Register */
 .form {
   border: 2px solid #ffffff;
-  padding: 3.6rem;
+  padding: 2rem;
   max-width: 600px;
+  position: relative;
 }
 .input-wrap {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+}
+
+.small {
+  width: 32px;
+  width: 32px;
+}
+
+.nav {
+  position: relative;
+}
+.hero-square {
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+.hero {
+  position: relative;
+}
+.hero-triangle {
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+}
+
+.hero-circle {
+  position: absolute;
+  right: 0;
+}
+
+.triangle-form {
+  position: absolute;
+  right: -25%;
+  top: -25%;
+}
+
+.triangle-form__image {
+  width: 75%;
+  height: 75%;
+}
+
+.square-form {
+  position: absolute;
+  right: -65%;
+  top: 10%;
+}
+
+.square-form__image {
+  width: 65%;
+  height: 65%;
+}
+
+.circle-form {
+  position: absolute;
+  right: -55%;
+  top: -45%;
+}
+
+.circle-form__image {
+  width: 75%;
+  height: 75%;
 }
