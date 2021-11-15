@@ -42,9 +42,15 @@ h3 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 5.8rem;
+    margin: 0;
+  }
+}
 @media screen and (min-width: 1068px) {
   h1 {
     font-size: 10rem;
@@ -77,7 +83,6 @@ body {
   width: 48px;
   margin-right: 20px;
 }
-
 .icon-company {
   width: 100%;
   max-width: 100px;
@@ -91,11 +96,16 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase;
+  text-align: center;
   padding: 1.5rem 6rem;
   border: 2px solid var(--color-body);
   color: var(--color-body);
   background-color: transparent;
   text-decoration: none;
+}
+
+.btn--text-large {
+  font-size: 2rem;
 }
 
 .btn:hover {
@@ -165,6 +175,12 @@ body {
 .speaker__info {
   text-align: center;
 }
+
+@media screen and (min-width: 500px) {
+  .speaker__info {
+    text-align: left;
+  }
+}
 /* grids */
 
 .grid {
@@ -213,12 +229,12 @@ body {
 
 .agenda__heading {
   color: var(--color-primary);
-  margin-bottom: 4.8rem;
+  margin: 4.8rem 0;
 }
 
 .agenda__heading--blue {
   color: #10baff;
-  margin-bottom: 4.8rem;
+  margin-bottom: 4.8rem 0;
 }
 
 .container-padding {
@@ -305,6 +321,10 @@ a {
   color: var(--color-body);
 }
 
+.nav__item > a:hover {
+  color: var(--color-primary);
+}
+
 .collapsible__content {
   max-height: 0;
   overflow: hidden;
@@ -349,7 +369,7 @@ a {
 }
 .date {
   font-size: 1.8rem;
-  margin-bottom: 4.8rem;
+  margin: 3.2rem 0 5rem;
 }
 
 .container {
@@ -362,11 +382,11 @@ a {
   margin-bottom: 4rem;
 }
 
-/* .section__heading {
+.section__heading {
   font-weight: 600;
-  font-size: 6rem;
-  margin: 0 0 7rem 0;
-} */
+  font-size: 4.8rem;
+  margin: 4rem 0;
+}
 .img {
   max-width: 600px;
 }
@@ -392,29 +412,40 @@ a {
   padding: 3rem 0;
 }
 
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 8rem 0;
+  }
+}
+
 @media screen and (min-width: 1100px) {
   .about {
-    padding: 16rem 0;
+    padding: 16rem 0 8rem;
   }
 }
 
 /* Agenda */
 
 .agenda {
-  padding: 10rem 0;
+  padding: 4rem 0;
 }
 
 /* Register */
 .form {
   border: 2px solid #ffffff;
-  padding: 2rem;
+  border-radius: 5px;
+  padding: 3.2rem;
   max-width: 600px;
   position: relative;
+}
+
+input {
+  padding: 1rem;
 }
 .input-wrap {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .small {
@@ -428,12 +459,13 @@ a {
 .hero-square {
   position: absolute;
   top: 0;
-  left: 20%;
+  left: 15%;
 }
 
 .hero {
   position: relative;
 }
+
 .hero-triangle {
   position: absolute;
   left: 0;
