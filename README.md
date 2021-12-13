@@ -2,6 +2,8 @@
 
 Landing page for a fictional conference designed to give a one-page overview of the event, and encourage signup with minimal friction by incorporating credit card capture on the page.
 
+Tech Stack: Figma, HTML5, CSS3
+
 # Attributions
 
 [Jennifer Rodriguez Photo](https://unsplash.com/photos/Zz5LQe-VSMY) by [Stephanie Liverani](https://unsplash.com/@steph)<br/>
