@@ -1,6 +1,6 @@
 # Design and Code Conference Website 
 
-Landing page for a fictional conference designed to give a simple overview of the event. It encourages signup with minimal friction by incorporating credit card capture on the page.
+Landing page for a fictional conference designed to give a simple overview of the event. The page encourages signup with minimal friction by incorporating credit card capture on the page.
 
 Tech Stack: Figma, HTML5, CSS3
 
