@@ -27,6 +27,15 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes fadein {
+ 0% { opacity: 0; }
+ 100% { opacity: 1; }
+}
+
+/* h1, h2, h3, h4, li, p, img, svg, .grid, form, a.btn, footer {
+  opacity: 0;
+} */
+
 body {
   background-color: var(--color-body--darker);
   font-family: Helvetica, sans-serif;
@@ -142,6 +151,7 @@ body {
   align-self: center;
   margin-bottom: 2rem;
 }
+
 
 @media screen and (min-width: 500px) {
   .speaker-profile-wrap {
@@ -481,6 +491,10 @@ input {
   position: absolute;
   top: 0;
   left: 15%;
+}
+
+.hero-square.none {
+  display: none;
 }
 
 .hero {
